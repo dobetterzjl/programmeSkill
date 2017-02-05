@@ -1,0 +1,25 @@
+<!-- 将数据库中时间戳格式转换为想要格式 -->
+
+PHP：
+<?php echo date("Y年m月d日",strtotime($detail->addtime));?>
+<!-- Y年m月d日 是你想要格式  $detail->addtime是从数据库中取出的时间-->
+
+js:
+ var comTimeEnd = data.end_time;
+           var comTimeStart = data.addtime;
+           var aa=comTimeStart.split(' ');
+           var startTime = aa[0].split('-');
+           var startTimeY=startTime[0];
+           var startTimeM=startTime[1];
+           var startTimeD=startTime[2];
+           console.log(startTime);
+           var bb=comTimeEnd.split(' ');
+           var endTime=bb[0].split('-');
+           var endTimeY=endTime[0];
+           var endTimeM=endTime[1];
+           var endTimeD=endTime[2];
+           // var startTime= aa[0];
+           $('.com-time').html('开始时间：'+startTimeY+'年'+startTimeM+'月'+startTimeD+'日'+'--结束时间：'+endTimeY+'年'+endTimeM+'月'+endTimeD+'日');
+ <!-- 文字和图片并排时，想要文字相对图片居中 -->
+ 			css:vertical-align:middle;
+
