@@ -1,0 +1,25 @@
+插入：
+$data=array(
+	'title'=>'my title',
+	'name'=>'myname'
+);
+$this->db->insert('mytable',$data)
+
+
+
+vertical-align:middle;//垂直居中
+父元素overflow:hidden 解决浮动问题
+当图片旁边有文字时，文字默认局下，想要文字居中，则设置图片vertical-align:middle;
+元素中文字居中line-hight=hight
+
+
+jquery
+跳转：location.href="";
+input type="file" 上传文件
+
+富文本编辑器：kindeditor
+将元素设置为contenteditable="true";则可编辑
+文件上传在form表单中 添加属性 enctype="multipart/form-data";
+
+
+background:url() no-repeat center center;
