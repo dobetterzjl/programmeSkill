@@ -1,0 +1,12 @@
+解决文字太多溢出情况将多余文字显示为....，多行文字
+适用于webkit浏览器内核和移动端
+display:-webkit-box;
+overflow:hidden;
+text-overflow:ellipsis;
+-webkit-line-clamp:2;//要显示的行数
+-webkit-box-orient:vertical;
+
+单行文字：
+overflow:hidden;
+text-overflow:ellipsis;
+white-space:nowrap;
